@@ -1,0 +1,23 @@
+# Android fstab file.
+# The filesystem that contains the filesystem checker binary (typically /system) cannot
+# specify MF_CHECK, and must come before any filesystems that do specify MF_CHECK
+
+# mount point	fstype    device    	[device2]    fs_options    [fs_options2]    lun
+
+/boot         emmc  /dev/bootimg
+/recovery     emmc  /dev/recovery
+/system       ext4  /emmc@android
+/cache        ext4  /emmc@cache
+/data         ext4  /emmc@usrdata
+/internal_sd  vfat  /devices/platform/mtk-msdc.0/mmc_host
+/external_sd  vfat  /devices/platform/mtk-msdc.1/mmc_host  lun=sys/class/android_usb/android0/f_mass_storage/lun/file
+/usbotg       vfat  /devices/platform/mt_usb
+# MTK partitions define
+/protect_f    ext4  /emmc@protect_f
+/protect_s    ext4  /emmc@protect_s 
+/uboot        emmc  /dev/uboot
+/logo	      emmc  /dev/logo
+/nvram	      emmc  /dev/nvram
+/secro        emmc  /dev/sec_ro
+/misc         emmc  /dev/misc
+/pro_info     emmc  /dev/pro_info
