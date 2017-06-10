@@ -79,26 +79,25 @@ PRODUCT_COPY_FILES += \
 # Thermal
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal.conf:system/etc/.tp/thermal.conf \
-    $(LOCAL_PATH)/configs/.ht120.mtc:system/etc/.tp/.ht120.mtc \
     $(LOCAL_PATH)/configs/thermal.off.conf:system/etc/.tp/thermal.off.conf \
     $(LOCAL_PATH)/configs/thermalstress.cfg:system/etc/.tp/thermalstress.cfg
 
 # Ramdisk
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/root//sbin/busybox:root/sbin/busybox \
-    $(LOCAL_PATH)/rootdir/root/enableswap.sh:root/enableswap.sh \
-    $(LOCAL_PATH)/rootdir/root/fstab.mt6582:root/fstab.mt6582 \
-    $(LOCAL_PATH)/rootdir/root/init.recovery.mt6582.rc:root/init.recovery.mt6582.rc \
-    $(LOCAL_PATH)/rootdir/root/init.mt6582.rc:root/init.mt6582.rc \
-    $(LOCAL_PATH)/rootdir/root/init.project.rc:root/init.project.rc \
-    $(LOCAL_PATH)/rootdir/root/init.ssd.rc:root/init.ssd.rc \
-    $(LOCAL_PATH)/rootdir/root/init.modem.rc:root/init.modem.rc \
-    $(LOCAL_PATH)/rootdir/root/ueventd.rc:root/ueventd.rc \
-    $(LOCAL_PATH)/rootdir/root/init.mt6582.usb.rc:root/init.mt6582.usb.rc \
-    $(LOCAL_PATH)/rootdir/root/init.trace.rc:root/init.trace.rc \
-    $(LOCAL_PATH)/rootdir/root/init.nvdata.rc:root/init.nvdata.rc \
-    $(LOCAL_PATH)/rootdir/root/init.mt6582.power.rc:root/init.mt6582.power.rc \
-    $(LOCAL_PATH)/rootdir/root/init.aee.rc:root/init.aee.rc \
+    $(LOCAL_PATH)/rootdir/sbin/busybox:root/sbin/busybox \
+    $(LOCAL_PATH)/rootdir/enableswap.sh:root/enableswap.sh \
+    $(LOCAL_PATH)/rootdir/fstab.mt6582:root/fstab.mt6582 \
+    $(LOCAL_PATH)/rootdir/init.recovery.mt6582.rc:root/init.recovery.mt6582.rc \
+    $(LOCAL_PATH)/rootdir/init.mt6582.rc:root/init.mt6582.rc \
+    $(LOCAL_PATH)/rootdir/init.project.rc:root/init.project.rc \
+    $(LOCAL_PATH)/rootdir/init.ssd.rc:root/init.ssd.rc \
+    $(LOCAL_PATH)/rootdir/init.modem.rc:root/init.modem.rc \
+    $(LOCAL_PATH)/rootdir/ueventd.rc:root/ueventd.rc \
+    $(LOCAL_PATH)/rootdir/init.mt6582.usb.rc:root/init.mt6582.usb.rc \
+    $(LOCAL_PATH)/rootdir/init.trace.rc:root/init.trace.rc \
+    $(LOCAL_PATH)/rootdir/init.nvdata.rc:root/init.nvdata.rc \
+    $(LOCAL_PATH)/rootdir/init.mt6582.power.rc:root/init.mt6582.power.rc \
+    $(LOCAL_PATH)/rootdir/init.aee.rc:root/init.aee.rc \
 
 # Permissions
 PRODUCT_COPY_FILES += \
